@@ -35,15 +35,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Passar Dados" id="tmc-NS-gKs"/>
+                    <connections>
+                        <outlet property="nomeCampo" destination="4DE-l5-OWr" id="SGo-ve-aqy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="77.678571428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--DetalhesV View Controller-->
         <scene sceneID="kai-JG-Tuu">
             <objects>
-                <viewController id="MWr-di-sR2" sceneMemberID="viewController">
+                <viewController id="MWr-di-sR2" customClass="detalhesVViewController" customModule="Passando_Dados" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kwQ-wg-3OQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,6 +63,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="KVP-d2-y9I"/>
+                    <connections>
+                        <outlet property="resultadoLegenda" destination="JT1-MO-NeQ" id="npS-pL-Tjf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vao-9N-b0Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

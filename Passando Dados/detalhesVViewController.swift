@@ -9,6 +9,10 @@ import UIKit
 
 class detalhesVViewController: UIViewController {
 
+    
+    @IBOutlet weak var resultadoLegenda: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -12,11 +12,14 @@ class detalhesVViewController: UIViewController {
     
     @IBOutlet weak var resultadoLegenda: UILabel!
     
+    var textoRecebido: String = "0"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        resultadoLegenda.text = textoRecebido
+        
+        
     }
     
 

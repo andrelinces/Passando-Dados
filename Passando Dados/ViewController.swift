@@ -14,7 +14,15 @@ class ViewController: UIViewController {
     //criando método para utilização da segues.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        print("Chamada segues")
+        //Precisa testar o identifier da segue, pois se tivessem mais segues, ou seja mais botões, o mesmo método seria executado.
+        
+        if segue.identifier == "enviarDados"{
+            
+            let vcDestino = segue.destination as!
+                detalhesVViewController
+            vcDestino.textoRecebido = nomeCampo.text!
+            
+        }
         
     }
     

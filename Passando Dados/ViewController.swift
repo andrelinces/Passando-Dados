@@ -16,12 +16,16 @@ class ViewController: UIViewController {
         
         //Precisa testar o identifier da segue, pois se tivessem mais segues, ou seja mais botões, o mesmo método seria executado.
         
-        if segue.identifier == "enviarDados"{
-            
-            let vcDestino = segue.destination as!
-                detalhesVViewController
-            vcDestino.textoRecebido = nomeCampo.text!
-            
+//        if segue.identifier == "enviarDados"{
+//
+//            let vcDestino = segue.destination as!
+//                detalhesVViewController
+//            vcDestino.textoRecebido = nomeCampo.text!
+//
+//        }
+        
+        if let destinoController = segue.destination as? detalhesVViewController{
+            destinoController.textoRecebido = nomeCampo.text ?? "Campo vazio"
         }
         
     }
